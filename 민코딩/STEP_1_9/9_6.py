@@ -1,9 +1,14 @@
-arr = [[],[],[]]
+arr= [[],[],[]]
+
 num = 65
 for i in arr:
-    a = [0,0,0]
-    for j in a:
-        a[j] = chr(num)
-        num+=1
-    arr.append(a)
-print(arr)
+    for j in range(3):
+        i.append(chr(num))
+        num += 1
+
+a, b = map(int, input().split())
+c, d = map(int, input().split())
+arr[a][b],arr[c][d] = arr[c][d] , arr[a][b]
+
+for i in arr:
+    print(*i, sep = '')
