@@ -20,5 +20,5 @@ for y in range(4):
             min = arr[y][x]
             min_y = y
             min_x = x
-print(f'Max={max}({max_y},{max_x})')
-print(f'Max={min}({min_y},{min_x})')
+print(f'MAX={max}({max_y},{max_x})')
+print(f'MIN={min}({min_y},{min_x})')
