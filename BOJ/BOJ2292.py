@@ -1,8 +1,7 @@
 num = int(input())
-i = 1
+hony = 1
 count = 1
-while  num > i:
-        i += 6 * i
+while  num > hony:
+        hony += 6 * count
         count += 1
-        i += 1
 print(count)
