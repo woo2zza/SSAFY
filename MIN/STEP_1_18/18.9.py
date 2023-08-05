@@ -14,4 +14,4 @@ def isPattern(floor):
 
 floor = list(map(int, input().split()))
 ret = isPattern(floor)
-print(ret)
+print(f'{ret}층')
