@@ -12,5 +12,5 @@ for i in range(4):
     dx = x + directx[i]
     dy = y + directy[i]
     if dx > 2 or dx < 0 or dy > 2 or dy < 0: continue
-    Sum = arr[dx][dy]
+    Sum += arr[dx][dy]
 print(Sum)
