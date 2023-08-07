@@ -8,10 +8,9 @@ sys.stdin = open("input.txt", "r")
 # hello
 
 # 1.아래에 정답을 입력하시오
-st=input()
+
+st = input()
 print(st)
-
-
 # 2.정수형 변수 입력 받고 출력해서 값이 잘 들어갔지 확인해보기
 # N = 45
 # A, B, C = 1, 2, 3
@@ -21,12 +20,11 @@ print(st)
 # 1 2 3
 
 # 2.아래에 정답을 입력하시오
-n=int(input())
-a,b,c=map(int,input().split())
-print(n)
-print(a,b,c)
 
-
+N = int(input())
+A, B, C = map(int, input().split())
+print(N)
+print(A, B, C)
 # 3.실수형 변수 입력 받고 출력해서 값이 잘 들어갔지 확인해보기
 # F = 3.14
 # A, B, C = 1.2, 2.3, 3.4
@@ -36,10 +34,10 @@ print(a,b,c)
 # 1.2 2.3 3.4
 
 # 3.아래에 정답을 입력하시오
-n=float(input())
-a,b,c=map(float,input().split())
-print(n)
-print(a,b,c)
+F = float(input())
+A, B, C = map(float, input().split())
+print(F)
+print(A, B, C)
 
 
 # 4.한 줄에 있는 공백으로 구분된 단어들을 각각 문자열로 리스트에 저장하고 출력해서 값이 잘 들어갔지 확인해보기
@@ -49,9 +47,9 @@ print(a,b,c)
 # one two three
 
 # 4.아래에 정답을 입력하시오
-lst=list(input().split())
-print(*lst)
 
+lst = list(input().split())
+print(lst)
 
 # 5.한 줄에 있는 공백으로 구분된 숫자들을 각각 숫자로 리스트에 저장하고 출력해서 값이 잘 들어갔지 확인해보기
 # (map 함수를 이용하여 문자열을 숫자로 바꾼 후 리스트로 변환)
@@ -61,8 +59,8 @@ print(*lst)
 # 1 2 45 43
 
 # 5.아래에 정답을 입력하시오
-lst=map(int,input().split())
-print(*lst)
+lst = list(map(int, input().split()))
+print(lst)
 
 
 # 6.한 줄에 있는 공백없는 한자리 숫자들을 각각 숫자로 리스트에 저장하고 출력해서 값이 잘 들어갔지 확인해보기
@@ -72,9 +70,9 @@ print(*lst)
 # 1234
 
 # 6.아래에 정답을 입력하시오
-lst=list(map(int,input()))
-print(*lst)
 
+lst = list(map(int, input()))
+print(lst)
 
 # 7.2차원 (N*N) 공백없는 한자리 숫자들을 2차원 arr에 저장하고 출력해서 값이 잘 들어갔지 확인해보기
 # N=4
@@ -88,11 +86,11 @@ print(*lst)
 # 1000
 
 # 7.아래에 정답을 입력하시오
-n=int(input())
-arr=[list(map(int,input())) for _ in range(n)]
 
-for i in range(n):
-    print(*arr[i])
+N = int(input())
+arr = [list(map(int, input())) for _ in range(N)]
+print(arr)
+
 
 # 8.2차원 (N*N) 정수값을 2차원 arr에 저장하고 출력해서 값이 잘 들어갔지 확인해보기 (N값과 arr값)
 # N=4
@@ -106,27 +104,23 @@ for i in range(n):
 # 13 14 15 16
 
 # 8.아래에 정답을 입력하시오
-N=int(input())
-arr=[list(map(int,input().split())) for _ in range(n)]
 
-for i in range(n):
-    print(*arr[i])
-
+N = int(input())
+arr = [list(map(int, input().split())) for _ in range(N)]
+print(arr)
 
 # 9.(입력값 없음) 0값 10개를 가진 1차원 lst 생성 후 출력해서 값이 잘 들어갔지 확인해보기
 # lst = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-lst=[0]*10
-print(*lst)
+lst = [[0]*10]
 
+print(lst)
 # 10.(입력값 없음) 0값 3 * 3 개를 가진 2차원 arr생성 후 출력해서 값이 잘 들어갔지 확인해보기
 # arr = [[0, 0, 0],
 #        [0, 0, 0],
 #        [0, 0, 0]]
 
-n=3
-arr=[[0]*n for _ in range(n)]
-for i in range(n):
-    print(*arr[i])
+arr = [[0]* 3 for _ in range(3)]
+print(arr)
 
 print('수고하셨습니다.')
