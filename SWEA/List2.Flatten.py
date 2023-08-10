@@ -1,14 +1,13 @@
-check = int(input())
-dump = list(map(int, input().split()))
-Max = 0
-Min = 0
-for j in range(check):
-    for i in range(len(dump)):
-        if dump[i] > Max:
-            Max = dump[i]
-            Max -= 1
-        if dump[i] < Min:
-            Min = dump[i]
-            Min += 1
+T = 10
+for q in range(1, T+1):
+    check = int(input())
+    dump = list(map(int, input().split()))
 
-    print(Max , Min)
+    for i in range(check):
+        max_idx = dump.index(max(dump))
+        dump[max_idx] -=1
+        min_idx = dump.index(min(dump))
+        dump[min_idx] +=1
+    print(f'#{q} {dump[dump.index(max(dump))]-dump[dump.index(min(dump))]}')
+
+

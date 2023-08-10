@@ -11,4 +11,4 @@ for i in range(4):
             arr[i][j] = '#'
 
 for i in arr:
-    print(i)
+    print(*i)

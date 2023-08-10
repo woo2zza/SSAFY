@@ -11,17 +11,15 @@ for i in range(num):
         
         x += directx[1] 
         y += directy[1] 
-        dx = directx[1] + x
-        dy = directy[1] + y
     elif point == 'down':
-        dx = directx[0] + x
-        dy = directy[0] + y
+        x += directx[0] 
+        y += directy[0] 
     elif point == 'right':
-        dx = directx[2] + x
-        dy = directy[2] + y
+        x += directx[2] 
+        y += directy[2] 
     elif point == 'left':
-        dx = directx[3] + x
-        dy = directy[3] + y
+        x += directx[3] 
+        y += directy[3] 
 
     elif point == 'click':
         print(f'{x},{y}')

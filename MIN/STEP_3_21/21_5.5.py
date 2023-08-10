@@ -10,4 +10,4 @@ for i in range(1, len(bucket)):
 for i in range(len(lst)):
     bucket[lst[i]]-=1
     result[bucket[lst[i]]] = lst[i]
-print(result)
+print(*result)

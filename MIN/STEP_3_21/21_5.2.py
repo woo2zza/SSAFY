@@ -11,4 +11,4 @@ for i in range(4):
     for j in range(3):
         multi += arr[j][i]
     Sum.append(multi)
-print(Sum)
+print(Sum[num])
