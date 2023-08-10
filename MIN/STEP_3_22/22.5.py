@@ -1,17 +1,14 @@
-num = int(input())
-a = []
-for i in range(num):
-    a.append(i)
+num = [i+1 for i in range(int(input()))]
 path = [''] * 4
 def abc(level):
-    if level == 2:
+    if level == 4:
         for i in range(len(path)):
             print(path[i], end = '')
         print()
         return
 
-    for i in range(2):
-        path[level] = a[i]
+    for i in range(len(num)):
+        path[level] = num[i]
         abc(level+1)
 
 abc(0)
