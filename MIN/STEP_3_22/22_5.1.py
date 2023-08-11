@@ -1,13 +1,15 @@
-path = [''] *2
-alpa = ['A','B','C']
-def abc(level):
-    if level == 2:
-        for i in range(2):
-            print(path[i], end = '')
-        print()
-        return
+arr = [
+    ['A','T','B'],
+    ['C','C','B']
+]
 
-    for i in range(3):
-        path[level] = alpa[i]
-        abc(level + 1)
-abc(0)
+arr2 = [
+    ['A','A','A'],
+    ['B','B','C']
+]
+st = input()
+for i in range(1):
+    if st in arr[0] or st in arr2[0]:
+        print('발견')
+    else:
+        print('미발견')
