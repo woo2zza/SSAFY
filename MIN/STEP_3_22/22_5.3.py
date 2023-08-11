@@ -1,14 +1,12 @@
-n = int(input())
-arr = ['x','o']
-path = ['']* n
-def abc(level):
-    if level == n:
-        for i in range(len(path)):
-            print(path[i], end = '')
-        print()
-        return
-    
-    for i in range(2):
-        path[level] = arr[i]
-        abc(level + 1)
-abc(0)
+st = input()
+A = ord(st)
+arr = [list([0] * 3 for _ in range(3)) for i in range(3) ]
+
+for i in arr:
+    for j in range(3):
+        for k in range(3):
+            arr[j][k] = chr(A)
+    A += 1
+    for q in arr:
+        print(*q, sep = '')
+    print()
