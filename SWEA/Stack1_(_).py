@@ -29,5 +29,6 @@ for q in range(1, T+1):
         print(f'#{q} 1')
     else: print(f'#{q} 0')
  
+ 
 
 
