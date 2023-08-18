@@ -7,7 +7,7 @@ for q in range(1, T+1):
             if num[j] > num[j +1]:
                 num[j], num[j+1] = num[j +1] , num[j]
     
-    print(f'#{q}', end = '')
+    print(f'#{q}', end = ' ')
     for i in num:
         print(i, end = ' ')
     print()
