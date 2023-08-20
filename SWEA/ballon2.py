@@ -9,10 +9,10 @@ for q in range(1, T+1):
 
     def pang(y , x):
         global Sum
-        for j in range(1, lst[y][x]):
-            for i in range(4):      
-                dy = y + directy[i]*j
-                dx = x + directx[i]*j
+        for a in range(1, lst[y][x]):
+            for b in range(4):      
+                dy = y + directy[b]*a
+                dx = x + directx[b]*a
                 if dy > M -1 or dy < 0 or dx > N -1 or dx < 0:
                     continue
                 Sum += lst[dy][dx]
@@ -21,7 +21,7 @@ for q in range(1, T+1):
     Max = 0
     for i in range(M):
         for j in range(N):
-            Sum = 0
+            Sum = lst[i][j]
             ret = pang(i, j)
             if Max < ret:
                 Max = ret
