@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('SWEA/input.txt','r')
+sys.stdin = open('input.txt', 'r')
 
 import math
 
