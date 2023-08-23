@@ -1,0 +1,5 @@
+st1 = list(map(int, input().split()))
+st2 = list(map(int, input().split()))
+st1.extend(st2)
+st1.sort()
+print(st1)

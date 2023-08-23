@@ -50,35 +50,35 @@
 # 이때 총 합은 몇일까요??
 # 각 라인에서 숫자는 1번씩만 사용하여 숫자를 뽑습니다.
 
-# line1=[5,2,7,-5,-7,9]
-# line2=[4,-5,-7,9,-5,3]
-# used1=[0]*6
-# used2=[0]*6
-# ans=21e8
-# Min=21e8
-# def dfs(level,sum):
-#     global Min,ans
-#     if level==12:
-#         if Min>abs(sum):
-#             Min=abs(sum)
-#             ans=sum
-#         return
-#
-#     if level%2==0:
-#         for i in range(6):
-#             if used1[i]==1: continue
-#             used1[i]=1
-#             dfs(level+1,sum+(line1[i]*(level+1)))
-#             used1[i]=0
-#     else:
-#         for i in range(6):
-#             if used2[i]==1: continue
-#             used2[i]=1
-#             dfs(level+1,sum+(line2[i]*(level+1)))
-#             used2[i]=0
-#
-# dfs(0,0)  # level # sum
-# print(ans)
+line1=[5,2,7,-5,-7,9]
+line2=[4,-5,-7,9,-5,3]
+used1=[0]*6
+used2=[0]*6
+ans=21e8
+Min=21e8
+def dfs(level,sum):
+    global Min,ans
+    if level==12:
+        if Min>abs(sum):
+            Min=abs(sum)
+            ans=sum
+        return
+
+    if level%2==0:
+        for i in range(6):
+            if used1[i]==1: continue
+            used1[i]=1
+            dfs(level+1,sum+(line1[i]*(level+1)))
+            used1[i]=0
+    else:
+        for i in range(6):
+            if used2[i]==1: continue
+            used2[i]=1
+            dfs(level+1,sum+(line2[i]*(level+1)))
+            used2[i]=0
+
+dfs(0,0)  # level # sum
+print(ans)
 
 
 
