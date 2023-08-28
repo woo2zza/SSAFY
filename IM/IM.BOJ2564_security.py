@@ -53,6 +53,7 @@ if sty == 3:
             C = stx + j
         if arr[j-1][ga-1] == 1:
             D = (ga-stx) + j -2
+            
 print(A)
 print(B)
 print(C)

@@ -16,4 +16,5 @@ for i in range(1, N +1):
     lst[s:e+1] = [0] * (e-s+1)
 print(mx1_i)
 print(mx2_i)
+
 print(lst)

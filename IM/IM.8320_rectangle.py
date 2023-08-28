@@ -7,4 +7,6 @@ for i in range(1, box+1):
     if A > 0:
         count += A
 
+
+
 print(count)
