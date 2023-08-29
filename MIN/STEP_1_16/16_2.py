@@ -14,6 +14,8 @@ def IsStr(st):
     return count
 
 
+
+
 st = list(input().split())
 ret1 = IsStr(st[0])
 ret2 = IsStr(st[1])
