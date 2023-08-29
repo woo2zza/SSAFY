@@ -26,6 +26,7 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 
 # 1. 정답을 아래에 적어 주세요
 
+
 ans=sorted(arr,key=lambda x:x)
 print(ans)
 
