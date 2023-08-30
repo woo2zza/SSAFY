@@ -64,8 +64,8 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 # 출력결과: ['G', 'F', 'E', 'C', 'B', 'B', 'A', 'DD', 'BB', 'AA']
 
 # 4. 정답을 아래에 적어 주세요
-
-ans=sorted(arr,key=lambda x:(-len(x),x),reverse=True)
+print()
+ans=sorted(arr,key=lambda x:(-len(x),x), reverse = True)
 print(ans)
 
 

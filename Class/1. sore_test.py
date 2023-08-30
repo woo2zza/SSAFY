@@ -28,9 +28,8 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 
 # 1. 정답을 아래에 적어 주세요. (1번 문제는 정답을 적어 놓았음)
 
-
-arr.sort()
-print(arr)
+lst = sorted(arr, key = lambda x : x)
+print(lst)
 
 
 # -----------------------------------------------------------------------------
@@ -43,8 +42,10 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 
 # 2. 정답을 아래에 적어 주세요
 
-sorted(arr)
-print(arr)
+
+lst = sorted(arr, key = lambda x : (len(x), x))
+print(lst)
+
 
 # -----------------------------------------------------------------------------
 
@@ -57,7 +58,8 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 # 3. 정답을 아래에 적어 주세요
 
 
-
+lst = sorted(arr, key = lambda x : (-len(x), x))
+print(lst)
 
 
 
@@ -72,7 +74,8 @@ arr=['A','C','B','F','BB','G','DD','E','B','AA']
 
 
 
-
+lst = sorted(arr, key= lambda x : (-len(x), x) , reverse= True)
+print(lst)
 
 
 
@@ -87,7 +90,8 @@ arr=[(1,3),(0,3),(1,4),(1,5),(0,1),(2,4)]
 
 
 
-
+lst = sorted(arr, key= lambda x : x[0])
+print(lst)
 
 
 
@@ -101,7 +105,8 @@ arr=[(1,3),(0,3),(1,4),(1,5),(0,1),(2,4)]
 # 6. 정답을 아래에 적어 주세요
 
 
-
+lst = sorted(arr, key= lambda x : (x[0],x[1]))
+print(lst)
 
 
 
