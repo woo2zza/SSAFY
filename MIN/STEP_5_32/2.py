@@ -1,9 +1,11 @@
-import sys
-sys.stdin = open("input.txt","r")
+n = int(input())
 lst = []
-N = int(input())
-for i in range(N):
-    lst.append((input().split()))
-
-new = sorted(lst, key = lambda x : lst[1])
-print(new)
+for i in range(n):
+    lst.append(list(input().split()))
+    lst[i][1] =  int(lst[i][1])
+    ans = sorted(lst, key=lambda x: (x[1], x[0]), reverse= True)
+    for j in range(len(ans)):
+        if j == 3:
+            break
+        print(ans[j][0], end=' ')
+    print()
