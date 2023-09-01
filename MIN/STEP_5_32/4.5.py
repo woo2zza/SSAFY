@@ -1,10 +1,19 @@
-N = int(input())
-arr = [3,2,-1,3,-2,10,-1]
+import sys
+sys.stdin = open("input.txt","r")
 
-def abc(level):
-    if arr[level] == 10:
-        print(f'{level}번')
-        return
-    abc(arr[level]+ level)
-    print(f'{level}번')
-abc(N)
+N = int(input())
+lst = list(input().split() for _ in range(N))
+
+st , ed = 0, 50
+
+for i in range(len(lst)):
+    if lst[i][1] == 'DOWN':
+        ed = lst[i][0]
+    else:
+        st = lst[i][0]
+if int(st)+1 == int(ed)-1:
+    print(int(st)+1)
+elif int(st) < int(ed):
+    print(f'{int(st)+1} ~ {int(ed)-1}')
+else:
+    print('ERROR')
