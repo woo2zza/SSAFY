@@ -6,7 +6,8 @@ print(oct(12))
 print(hex(12))
 
 print(2/3)
-print(5/3)
+print(5/3) 
+
 
 # 지수 표기(제곱하는 회수) 10^
 print(314e-2)  # 3.14

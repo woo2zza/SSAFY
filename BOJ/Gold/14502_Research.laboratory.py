@@ -10,8 +10,6 @@ directx = [1,-1,0,0, 0]
 
 
 
-
-
 def virus(i, j):
     for k in range(5):
         dy = i + directy[k]
