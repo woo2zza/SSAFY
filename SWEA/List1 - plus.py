@@ -12,4 +12,5 @@ for q in range(1,T+1):
             Max = Sum
         if Sum < Min:
             Min = Sum
+            
     print(f'#{q} {Max - Min}')

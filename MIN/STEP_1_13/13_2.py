@@ -6,6 +6,7 @@ def stringLen(A):
     return count
 
 
+
 st = input()
 A = stringLen(st)
 print(f'{A}글자')
