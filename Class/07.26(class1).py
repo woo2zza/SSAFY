@@ -13,7 +13,6 @@ class Person:
         return f'{self.name}가 노래합니다.'         
     
 
-
 # 인스턴스 생성
 singer1 = Person('iu')   # 인자가 반드시 필요
 singer2 = Person('bts')  # 같은 클래스를 가진 다른 인스턴스
