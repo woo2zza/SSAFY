@@ -17,6 +17,8 @@ def abc(now, cnt):
         print(cnt)
         return 
     
+    
+    
     for i in arr[now]:
         if used[i] ==1 :
             continue

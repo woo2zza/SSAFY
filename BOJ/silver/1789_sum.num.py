@@ -10,5 +10,7 @@ for i in range(S+1):
         break
     elif Sum == S:
       
+
+      
         print(cnt-1)
         break
