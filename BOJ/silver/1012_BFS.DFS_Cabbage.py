@@ -10,7 +10,6 @@ for q in range(T):
 
         directy = [0,0,-1,1]
         directx = [1,-1,0,0]
-        lst = []
 
 
         def bfs(row, col):
@@ -36,6 +35,5 @@ for q in range(T):
                     used[row][col] = 1
                     ret = bfs(row, col)
                     cnt += 1
-                    lst.append(ret)
 
     print(cnt)
