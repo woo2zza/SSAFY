@@ -1,5 +1,3 @@
-import sys
-sys.stdin = open("input.txt","r")
 from collections import deque
 
 N, M = map(int, input().split())
