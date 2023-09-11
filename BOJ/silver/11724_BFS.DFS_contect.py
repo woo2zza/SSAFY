@@ -1,32 +1,35 @@
+import sys
+sys.stdin = open("input.txt","r")
 from collections import deque
+
 N, M = map(int, input().split())
-arr = [[0]*(N+1) for _ in range(N+1)]
+arr = {}
 for i in range(M):
     st, ed = map(int, input().split())
-    arr[st][ed] = 1
-    arr[ed][st] = 1
+    if st not in arr:
+        arr[st] = []
+    if ed not in arr:
+        arr[ed] = []
+    arr[st].append(ed)
+    arr[ed].append(st)
 
-used = [[0]*(N+1) for _ in range(N+1)]
 
-def bfs(i,j):
-        dec = deque()
-        dec.append((i,j))
-        while dec:
-            new = dec.popleft()
-            x, y = new
-            for col in range(1, N+1):
-                if arr[y][col] == 1 and used[y][col] == 0:
-                    used[y][col] = 1
-                    used[col][y] = 1
-                    dec.append((y,col))
+used = [0]* (N+1)
+def bfs(start):
+    dec = deque()
+    dec.append(start)
+    while dec:
+        now = dec.popleft()
+        if now not in arr: continue
+        for neighbor in arr[now]:
+            if used[neighbor] == 1: continue
+            used[neighbor] = 1
+            dec.append(neighbor)
 
 cnt = 0
-for i in range(1,N +1):
-    for j in range(1,N+1):
-        if arr[i][j] == 1 and used[i][j] == 0:
-            used[i][j] = 1
-            used[j][i] = 1
-            cnt += 1
-            bfs(i,j)
-
+for i in range(1, N+1):
+    if used[i] == 0 :
+        used[i] = 1
+        cnt +=1
+        bfs(i)
 print(cnt)
