@@ -12,6 +12,8 @@ for i in range(M):
     arr[ed].append(st)
 
 
+
+
 used = [0]* (N+1)
 def bfs(start):
     dec = deque()

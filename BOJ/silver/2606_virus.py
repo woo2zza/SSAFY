@@ -9,6 +9,7 @@ cnt = -1
 used = [0] * (C+1)
 used[1] = 1
 
+
 while q:
     new = q.popleft()
     cnt += 1
