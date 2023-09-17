@@ -7,6 +7,7 @@ directy=[0,0,-1,1]
 directx=[1,-1,0,0]
 # 생쥐의 위치 -> 치즈위치  +  치즈위치 -> 친구의 위치
 
+
 def bfs(sty, stx, edy, edx):
     used = [[0]*6 for _ in range(4)]
     used[sty][stx] = 1

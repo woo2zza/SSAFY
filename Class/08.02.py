@@ -9,6 +9,8 @@ dj = [1 ,0 ,-1 ,0]
 N = int(input())
 arr = [list(map(int, input().split())) for _ in range(N)]
 
+
+
 max_v = 0  #모든 원소가 0이상이라면..
 for i in range(N):  # 모든 원소 arr[i][j]에 대해..
     for j in range(N):
