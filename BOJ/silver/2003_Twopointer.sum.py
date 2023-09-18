@@ -11,8 +11,11 @@ for start in range(N):
         Sum += lst[end]
         end += 1
 
+
     if Sum == M:
         cnt += 1
     Sum -= lst[start]
+
+
 
 print(cnt)

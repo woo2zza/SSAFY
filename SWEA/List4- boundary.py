@@ -11,8 +11,6 @@ for q in range(1, T + 1):
             elif page < mid: ed = mid
 
 
-
-
     P, A, B = map(int, input().split())
     ret1 = page(1, P, A)
     ret2 = page(1, P, B)
