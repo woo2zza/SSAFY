@@ -1,5 +1,3 @@
-import sys
-input = sys.stdin.readline
 def find(x):
     global parent
     if parent[x] == -1:
@@ -11,13 +9,13 @@ def find(x):
 
 
 def union(a, b):
-    global parent, cnt
+    global parent
     finda, findb = find(a), find(b)
 
     if finda == findb:
         return
     else:
-        parent[finda] = findb
+        parent[findb] = finda
 
 
 N, M = map(int, input().split())

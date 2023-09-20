@@ -1,9 +1,13 @@
-import heapq
-arr =[34, 213, 57, 1, 2, 54, 2, 65]
-heap = []
-
-for i in range(len(arr)):
-    heapq.heappush(heap, arr[i])
-
-for i in range(len(heap)):
-    print(heapq.heappop(heap), end = ' ')
+while 1:
+    a, b, c = map(int, input().split())
+    if a == 0 and b == 0 and c == 0 :
+        break
+    lst = []
+    lst.append(a)
+    lst.append(b)
+    lst.append(c)
+    lst.sort()
+    if lst[0] ** 2 + lst[1] **2 == lst[2] **2:
+        print('right')
+    else:
+        print('wrong')
