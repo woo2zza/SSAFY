@@ -21,7 +21,7 @@ print('소수구하기_ 기본코드')
 # for i in range(2, num +1):
 #     flag = 0
 #     for j in range(2, i):
-#         if i%j == 0:
+#         if i != j and i%j == 0:
 #             flag = 1
 #             break
 #         if flag == 0: ans.append(i)
