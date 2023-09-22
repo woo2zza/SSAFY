@@ -16,8 +16,8 @@ def bfs(N):
             cnt += 1
             result = direct[now]
 
-        for next in (now-1, now+1, now*2):
-            if next < 0 or next > Max :continue#or direct[next] != 0 : continue
+        for next in (now*2, now-1, now+1 ):
+            if next < 0 or next > Max  or direct[next] != 0 : continue
             direct[next] = direct[now] +1
             deq.append(next)
 
@@ -26,4 +26,3 @@ ret = bfs(N)
 print(ret)
 
 
-print('다시')
