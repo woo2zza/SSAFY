@@ -23,15 +23,14 @@ for i in range(N):
         if lst[i][j] == 1:
             union(i+1, j+1)
 
-connected = set()
+result = set()
 for i in range(M-1):
     if find(travel[i]) == find(travel[i+1]):
-        connected.add('YES')
+        result.add('YES')
     else:
-        connected.add('NO')
+        result.add('NO')
 
-# Check if all elements in connected are 'YES'
-if 'NO' in connected:
+if 'NO' in result:
     print('NO')
 else:
     print('YES')
