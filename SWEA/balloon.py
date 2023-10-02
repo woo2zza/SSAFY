@@ -18,6 +18,8 @@ for q in range(1, T +1):
             else:
                 Flag = 1
             
+
+            
         elif st[i] == '}':
             if len(ch_arr) == 0: 
                 Flag = 0
