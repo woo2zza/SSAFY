@@ -9,6 +9,8 @@
 
 # print(*new_lst[::-1])
 
+
+
 new = []
 num = int(input())
 st = list(map(int, input().split()))
