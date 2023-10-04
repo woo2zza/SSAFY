@@ -1,1 +1,1 @@
-print('get')
+print('hello')
