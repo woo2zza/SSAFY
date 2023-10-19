@@ -1,23 +1,28 @@
-import sys
-sys.stdin = open('input.txt')
+# import sys
+# sys.stdin = open('input.txt')
 
 lst= []
 N = int(input())
 for i in range(N):
     lst.append(int(input()))
 
-num = [i for i in range(1,8)]
+num = [i for i in range(1,N+1)]
 
-def dfs(number, idx):
+def dfs(number):
     global result
+    if number == N: 
+        return result
     while 1:
-        if lst[idx] == number:
+
+        if lst[number-1] == number:
             result.append(number)
-            break
-        elif
 
+        elif dfs(lst[number-1]) == num:
+            result.append(number)
 
+        else:
+            dfs(number+1)
 
 result = []
-for i in num:
-    dfs(i)
+dfs(1)
+print(result)
