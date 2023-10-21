@@ -7,7 +7,6 @@ def find(x):
     parent[x] = ret
     return ret
 
-
 def union(a, b):
     global parent
     finda, findb = find(a), find(b)
@@ -16,7 +15,6 @@ def union(a, b):
         return
     else:
         parent[findb] = finda
-
 
 N, M = map(int, input().split())
 parent = [-1] * (N + 1)
