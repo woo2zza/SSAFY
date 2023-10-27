@@ -4,6 +4,7 @@ input = sys.stdin.readline
 N = int(input())
 heap = []
 
+
 for _ in range(N):
     num = int(input())
     if num > 0 :
