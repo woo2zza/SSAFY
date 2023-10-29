@@ -9,8 +9,7 @@ for i in range(S+1):
         print(cnt-2)
         break
     elif Sum == S:
-      
-
+    
       
         print(cnt-1)
         break
