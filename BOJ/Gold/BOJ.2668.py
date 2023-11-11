@@ -1,26 +1,25 @@
-import sys
-sys.stdin = open('input.txt','r')
-# 인덱스번호 1번부터 N번까지 input값 넣어줌
 N = int(input())
-arr = ['']
-for i in range(1,N+1):
-    arr.append(int(input()))
+adj = [[] for i in range(N+1)]
+for i in range(N):
+    adj[i+1].append(int(input()))
 
-# 결과 배열
+
+
+
+def dfs(v,i):
+    visited[v] = True
+
+    for w in adj[v]:
+        if not(visited[w]):
+            dfs(w,i)
+        elif visited[w] and w == i:
+            result.append(w)
+
 result = []
-
-def dfs(index, target):
-    global result
-# dfs를 이용해 index값과 index의 input값이 같으면 result에 넣어줌
-    if arr[index] == target:
-        result.append(index)
-        return result
-# 같지 않다면 dfs에 arr[index]를 넣어주며 index값과 같은 값이 있는지 확인
-    dfs(arr[index], target)
-
-
-for i in range(1,N+1):
-    parents = dfs(i, i)
-    if parents == i:
-        result.append(parents)
-print(result)
+for i in range(1, N+1):
+    visited = [False] * (N+1)
+    dfs(i, i)
+l = len(result)
+print(l)
+for i in range(l):
+    print(result[i])
