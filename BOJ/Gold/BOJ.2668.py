@@ -4,8 +4,6 @@ for i in range(N):
     adj[i+1].append(int(input()))
 
 
-
-
 def dfs(v,i):
     visited[v] = True
 
