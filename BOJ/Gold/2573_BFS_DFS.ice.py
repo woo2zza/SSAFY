@@ -64,7 +64,7 @@ while Flag == 0:
                 Flag = 0 # 빙산발견 스위치on
                 height(i,j)
     
-    lst3 = copy.deepcopy(lst) # 빙산 개수 확인용 복사본
+    lst3 = copy.deepcopy(lst) # 빙산의 개수 확인용 복사본
     cnt = 0
     for i in range(Y):
         for j in range(X):
